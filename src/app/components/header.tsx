@@ -34,19 +34,19 @@ export default function Header() {
                     height="35"
                 />
             </Link>
-        <nav>
-            <ul className="flex gap-x-5 text-[14px]">
-                {
-                    navLinks.map((link) => (
-                        <li key={link.href}>
-                            <Link className={`${
-                                pathname === link.href ? "text-zinc-100 underline" : "text-zinc-400"
-                            }`} href={link.href}>{link.label}</Link>
-                        </li>
-                    ))
-                }
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul className="flex gap-x-5 text-[14px]">
+                    {
+                        navLinks.map((link) => (
+                            <li key={link.href}>
+                                <Link className={`${
+                                    pathname === link.href ? "text-zinc-100 underline" : "text-zinc-400"
+                                }`} href={link.href}>{link.label}</Link>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </nav>
+        </header>
   )
 }
